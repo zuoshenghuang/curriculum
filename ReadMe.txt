@@ -1,0 +1,1 @@
+this curriculum is specific to information scince department of HRBNU
