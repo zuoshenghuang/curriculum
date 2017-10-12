@@ -10,25 +10,20 @@ double DividedBy(int a, int b)
 	return double(a / b);
 }
 
-int getMin(int arr[], int size)
+/*
+*/
+int accumulate(int arr[], int size)
 {
-	int min = 0x7fffffff;
-	for (int i = 0; i < size; i++)
-		if (min > arr[i])
-			min = arr[i];
-	return min;
-}
+	int result = 0;
+	for (int i =0; i<size; i++ )
+	{
+		if (arr[i] > 100 || arr[i] < -100)
+		{
+			throw 0;
+		}
 
-int getMin_E(int arr[], int size)
-{
-	if (size == 0)
-		throw 0;
-
-	int min = 0x7fffffff;
-	for (int i = 0; i < size; i++)
-		if (min > arr[i])
-			min = arr[i];
-	return min;
+		result += arr[i];
+	}
 }
 
 int main()
@@ -56,20 +51,17 @@ int main()
 	}
 
 	// 返回的最小值对吗？
-	int arr[1];
-	int min = getMin(arr, 0);
-	std::cout << "min is:\t" << min <<"("<< std::hex<< min<<")"<<std::endl;
-
-	// 用异常处理来确认
+	int arr[5] = {-13, 7, 13, 1154, 27};
+		// 用异常处理来确认
 	try
 	{
-		int min = getMin_E(arr, 0);
-		std::cout << "min is:\t" << min << "(" << std::hex << min << ")" << std::endl;
+		int sum = accumulate(arr, 5);
+		std::cout << "sum is:\t" << sum << std::endl;
 	}
 	catch (int e)
 	{
 		if(e == 0)
-			std::cout << "array is empty" << std::endl;
+			std::cout << "some value is exceptional" << std::endl;
 	}
 
 	system("pause");

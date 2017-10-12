@@ -1,5 +1,4 @@
 #pragma once
-#pragma once
 #include <cmath>
 #include<iostream>
 
@@ -8,6 +7,7 @@ typedef struct Vector3D
 	float x, y, z;
 
 	Vector3D() { x = 0; y = 0; z = 0; }
+
 	Vector3D(float x0, float y0, float z0) : x(x0), y(y0), z(z0){}
 
 	// ÷ÿ‘ÿ ‰≥ˆ <<
