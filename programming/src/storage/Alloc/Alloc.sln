@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7Heap", "..\Heap\Heap.vcxpr
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2Cache", "..\Cache\Cache.vcxproj", "{ED27C176-7E73-448A-ADD9-65AA02401B6C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Register", "..\Register\Register.vcxproj", "{0D394D07-AD6D-4749-9C09-A8C35100CEBF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{ED27C176-7E73-448A-ADD9-65AA02401B6C}.Release|x64.Build.0 = Release|x64
 		{ED27C176-7E73-448A-ADD9-65AA02401B6C}.Release|x86.ActiveCfg = Release|Win32
 		{ED27C176-7E73-448A-ADD9-65AA02401B6C}.Release|x86.Build.0 = Release|Win32
+		{0D394D07-AD6D-4749-9C09-A8C35100CEBF}.Debug|x64.ActiveCfg = Debug|x64
+		{0D394D07-AD6D-4749-9C09-A8C35100CEBF}.Debug|x64.Build.0 = Debug|x64
+		{0D394D07-AD6D-4749-9C09-A8C35100CEBF}.Debug|x86.ActiveCfg = Debug|Win32
+		{0D394D07-AD6D-4749-9C09-A8C35100CEBF}.Debug|x86.Build.0 = Debug|Win32
+		{0D394D07-AD6D-4749-9C09-A8C35100CEBF}.Release|x64.ActiveCfg = Release|x64
+		{0D394D07-AD6D-4749-9C09-A8C35100CEBF}.Release|x64.Build.0 = Release|x64
+		{0D394D07-AD6D-4749-9C09-A8C35100CEBF}.Release|x86.ActiveCfg = Release|Win32
+		{0D394D07-AD6D-4749-9C09-A8C35100CEBF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

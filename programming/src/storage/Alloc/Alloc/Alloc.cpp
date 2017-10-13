@@ -1,6 +1,7 @@
 #include<iostream>
 
 /*
+	内存：
 	请分别在Debug/Release下进行测试
 	结果会有差异，差异是调试符号带来的
 */
@@ -51,14 +52,10 @@ struct Pair
 
 int main()
 {
-	show_int();
-	show_char();
+	//show_int();
+	//show_char();
 
-	Pair pair;
-	pair.a = 10; pair.b = 23;
-
-	pair.show();
-
+	// Pair pair; 	pair.a = 10; pair.b = 23;	pair.show();
 
 	system("pause");
     return 0;

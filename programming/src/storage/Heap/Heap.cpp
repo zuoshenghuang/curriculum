@@ -12,19 +12,19 @@
 
 void safe_del(void *p)
 {
-	if (NULL != p)
+	if (nullptr != p)
 	{ 
 		delete p;
-		p = NULL;
+		p = nullptr;
 	}
 }
 
 void safe_del_array(void *p)
 {
-	if (NULL != p)
+	if (nullptr != p)
 	{
 		delete [] p;
-		p = NULL;
+		p = nullptr;
 	}
 }
 
@@ -38,9 +38,8 @@ void test()
 	{
 		p[i] = i;
 	}
-	delete[] p;
-	delete[] q;
-
+//	delete[] p;
+//	delete[] q;
 	safe_del_array(p);
 }
 
