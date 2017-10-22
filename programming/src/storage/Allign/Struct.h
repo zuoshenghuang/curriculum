@@ -4,7 +4,7 @@
 /**
 	大小是否相等？为什么？
 */
-class CCI
+struct CCI
 {
 	char a;
 	char b;

@@ -50,14 +50,20 @@ int accumulate(int arr[], int size)
 		{
 			throw 0;
 		}
+		if (arr[i] < 0)
+		{
+			throw "negtive";
+		}
 		result += arr[i];
 	}
+
+	return result;
 }
 
 void test_accumulate()
 {
 	// 返回的最小值对吗？
-	int arr[5] = { -13, 7, 13, 1154, 27 };
+	int arr[5] = { -13, 7, 13, 13, 27 };
 	// 用异常处理来确认
 	try
 	{
@@ -90,7 +96,7 @@ int main()
 	// test_inf();
 	// test_divide();
 	// test_exception_divide();
-	// test_accumulate();
+	 test_accumulate();
 
 
 

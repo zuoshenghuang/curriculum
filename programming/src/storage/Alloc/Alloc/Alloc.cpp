@@ -7,7 +7,7 @@
 */
 void show_int()
 {
-	std::cout << "----INT-----" <<std::endl;
+	std::cout << "__FUNCTION__" <<std::endl;
 	int a = 13, b = 25;
 
 	int *pa = &a, *pb = &b;
@@ -55,7 +55,10 @@ int main()
 	//show_int();
 	//show_char();
 
-	// Pair pair; 	pair.a = 10; pair.b = 23;	pair.show();
+	Pair pair; 
+	pair.a = 10; 
+	pair.b = 23;	
+	pair.show();
 
 	system("pause");
     return 0;

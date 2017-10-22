@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Condition.h"
 #include "Pointer.h"
+#include <functional>
 
 class Power
 {
@@ -35,7 +36,7 @@ void test_show_by_condition()
 	}
 
 	//show_by_condition(a, COUNT, lessthanten);
-	//show_by_condition(a, COUNT, Even());
+	// show_by_condition(a, COUNT, Even());
 	//show_by_condition(a, COUNT, MT21());
 }
 
@@ -53,13 +54,26 @@ void test_pointer()
 	std::cout << a << std::endl;
 }
 
+void test_stdfunction()
+{
+	auto func = add_5;
+
+	int a = func(1321);
+	std::cout << a << std::endl;
+
+	func = power_3;
+	a = func(4);
+
+	std::cout << a << std::endl;
+}
 int main()
 {
-	test_functor();
+//	test_functor();
 
-	test_show_by_condition();
+//	test_show_by_condition();
 
-	test_pointer();
+//	test_pointer();
+	test_stdfunction();
 
 	system("pause");
 	return 0;

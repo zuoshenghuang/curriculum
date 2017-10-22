@@ -35,8 +35,8 @@ struct Happy
 int main()
 {	
 	//test();
-	//Happy h;
-	//h.show();
+	Happy h;
+	h.show();
 
 	system("pause");
     return 0;

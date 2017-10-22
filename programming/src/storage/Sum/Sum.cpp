@@ -9,7 +9,7 @@ int sum(int a, int b)
 	int d = c;
 
 	std::cout << "----SUM FUNCTION-----" << std::endl;
-	std::cout << std::dec << (&a) << "\t" << (&b) << "\t" << (&c) << "\t" << (&d) << std::endl;
+	std::cout << (&a) << "\t" << (&b) << "\t" << (&c) << "\t" << (&d) << std::endl;
 
 	return c;
 }
@@ -36,7 +36,7 @@ void test_sum()
 
 int main()
 {
-	add();
+	//add();
 	test_sum();
 
 	system("pause");

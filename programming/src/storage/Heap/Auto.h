@@ -7,7 +7,6 @@ public:
 	Array(int sz) : size(sz) 
 	{
 		arr = new Type[size];
-//		memset(arr, 0, size * sizeof(Type));
 	}
 
 	~Array()
@@ -16,6 +15,7 @@ public:
 		{
 			delete[] arr;
 			arr = nullptr;
+			std::cout << __FUNCTION__ << "\tOK" << std::endl;
 		}		
 	}
 

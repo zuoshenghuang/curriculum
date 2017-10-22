@@ -1,7 +1,8 @@
 #include <iostream>
 #include <time.h>
 
-const int MAX_COUNT = 100000000000;
+//const int MAX_COUNT = 100000000000;
+const int MAX_COUNT = 1000000;
 void test_register()
 {
 	clock_t start = clock();
@@ -18,7 +19,7 @@ void test_mem()
 	clock_t start = clock();
 
 	int sum = 1;
-	for (register int i = 1; i <= MAX_COUNT; i++)
+	for (int i = 1; i <= MAX_COUNT; i++)
 		sum *= i;
 
 	clock_t end = clock();
@@ -36,8 +37,8 @@ void show_register_addr()
 
 int main()
 {
-	test_mem();
-	test_register();
+	//test_mem();
+	//test_register();
 	show_register_addr();
 
 	system("pause");

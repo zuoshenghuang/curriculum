@@ -11,8 +11,8 @@ void show_size()
 
 int main()
 {
-	show_size();
-	show_class_size();
+//	show_size();
+//	show_class_size();
 	show_class_pack_size();
 
 	system("pause");

@@ -45,12 +45,13 @@ void test()
 
 void test_auto()
 {
+	/*
 	Array<char> ac(10);
 	ac[6] = 'f';
 	std::cout << ac[6] << std::endl;
 	std::cout << ac[2] << std::endl;
 	std::cout << ac[11] << std::endl;
-
+*/
 	const int COUNT = 25;
 	Array<int> ai(COUNT);
 	for (int i = 0; i < COUNT; i++)
@@ -60,11 +61,12 @@ void test_auto()
 		std::cout << ai[i] << " ";
 
 	std::cout << std::endl;
+	
 }
 int main()
 {
-	test();
-	// test_auto();
+	//test();
+	test_auto();
 
 	system("pause");
     return 0;
