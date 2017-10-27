@@ -1,0 +1,4 @@
+hello,this is a test ~text file for reading
+everyone
+你们在 这个教室
+the location is free

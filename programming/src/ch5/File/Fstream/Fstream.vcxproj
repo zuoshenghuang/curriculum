@@ -19,10 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{138B298F-B7C4-43BE-9328-001A98D60D19}</ProjectGuid>
+    <ProjectGuid>{662548A9-32A3-4539-8C62-7217A2A6317F}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>FileTest</RootNamespace>
+    <RootNamespace>Fstream</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>2Fstream</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -142,7 +143,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="FileTest.cpp" />
+    <ClCompile Include="Fstream.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
