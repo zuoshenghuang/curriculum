@@ -5,19 +5,19 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1Loction", "Alloc\Alloc.vcxproj", "{54751794-79AA-42A5-85F1-A298C5F0E9AA}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3Sum", "..\Sum\Sum.vcxproj", "{CB1B7D10-7DA3-4760-AE13-54D90F4F5EA4}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3Sum", "Sum\Sum.vcxproj", "{CB1B7D10-7DA3-4760-AE13-54D90F4F5EA4}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4Allign", "..\Allign\Allign.vcxproj", "{3ECC038C-3358-403F-AEAE-DB0C42E2D2E0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4Allign", "Allign\Allign.vcxproj", "{3ECC038C-3358-403F-AEAE-DB0C42E2D2E0}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5OutOfBound", "..\OutOfBound\OutOfBound.vcxproj", "{851173C8-EE80-4393-8FBB-D96F2EF1934C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5OutOfBound", "OutOfBound\OutOfBound.vcxproj", "{851173C8-EE80-4393-8FBB-D96F2EF1934C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6StackOverflow", "..\StackOverflow\StackOverflow.vcxproj", "{988069AE-2CFE-4C9A-BC58-35817C62EA3E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6StackOverflow", "StackOverflow\StackOverflow.vcxproj", "{988069AE-2CFE-4C9A-BC58-35817C62EA3E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7Heap", "..\Heap\Heap.vcxproj", "{26D4EB4E-320F-401E-AFA9-D0B5BB789037}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7Heap", "Heap\Heap.vcxproj", "{26D4EB4E-320F-401E-AFA9-D0B5BB789037}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2Cache", "..\Cache\Cache.vcxproj", "{ED27C176-7E73-448A-ADD9-65AA02401B6C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2Cache", "Cache\Cache.vcxproj", "{ED27C176-7E73-448A-ADD9-65AA02401B6C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Register", "..\Register\Register.vcxproj", "{0D394D07-AD6D-4749-9C09-A8C35100CEBF}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Register", "Register\Register.vcxproj", "{0D394D07-AD6D-4749-9C09-A8C35100CEBF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

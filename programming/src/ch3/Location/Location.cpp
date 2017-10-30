@@ -38,7 +38,7 @@ void test_stackobject()
 void test_heapObject()
 {
 	// 无法在栈上使用, (1)无效，编译无法通过
-	HeapObject car("Benz");									// (1)
+	//HeapObject car("Benz");									// (1)
 	// car.show();
 
 	HeapObject * product = HeapObject::produceObject("BMW"); // (2)

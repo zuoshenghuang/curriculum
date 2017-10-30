@@ -5,13 +5,13 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1StringTest", "StringTest\StringTest.vcxproj", "{EF2A9021-6D15-4CA8-BD97-39EB89D286C6}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2Char", "..\Char\Char.vcxproj", "{83277864-F174-4295-BB72-FD9AD48B29DC}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2Char", "Char\Char.vcxproj", "{83277864-F174-4295-BB72-FD9AD48B29DC}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3WCHAR", "..\WCHAR\WCHAR.vcxproj", "{7B21BF13-BEA8-4228-A675-C110C4F77101}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3WCHAR", "WCHAR\WCHAR.vcxproj", "{7B21BF13-BEA8-4228-A675-C110C4F77101}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4StringLib", "..\StringLib\StringLib.vcxproj", "{A992956D-86A2-4A70-A983-06685D4A8F5D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4StringLib", "StringLib\StringLib.vcxproj", "{A992956D-86A2-4A70-A983-06685D4A8F5D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StdString", "..\StdString\StdString.vcxproj", "{3B407940-DAE0-4428-A603-FCB323C26B58}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StdString", "StdString\StdString.vcxproj", "{3B407940-DAE0-4428-A603-FCB323C26B58}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
