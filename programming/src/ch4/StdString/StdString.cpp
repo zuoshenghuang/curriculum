@@ -15,6 +15,7 @@ void test_string()
 	std::cout << me << std::endl;
 	std::cout << me.size() << std::endl;
 	std::cout << me.length() << std::endl;
+	std::cout << "============================" << std::endl;
 
 	const char * str = c.c_str();
 	std::cout << "const char * str:\t" << str << std::endl;
@@ -27,10 +28,8 @@ void test_use()
 	using namespace std;
 
 	string str = "my chinese name";
-
 	string sub = str.substr(4, 8); //(起始位置，移动多远)
-
-	std::cout << "sub is:\t" << sub << std::endl;
+	cout << "sub is:\t" << sub << endl;
 
 	size_t pos = str.find(" ");
 	std::cout << "find:\t" << pos << std::endl;
@@ -50,7 +49,7 @@ void trim(std::string & s, std::string sep)
 	size_t pos = s.find_first_of(sep);
 	while (pos != std::string::npos)
 	{
-		s.erase(pos, 1);
+		s.erase(pos, sep.size());
 		pos = s.find_first_of(sep);
 	}
 }

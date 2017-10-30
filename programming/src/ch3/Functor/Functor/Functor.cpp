@@ -14,6 +14,7 @@ void test()
 
 	for_everyone(arr, 10, showme);		// (1)
 	for_everyone(arr, 8, clr);			// (2)
+	std::cout << "----------------------" << std::endl;
 	for_everyone(arr, 10, ShowMe());	// (3) 和 (1)有什么差别？
 
 	// ShowMe()是一个临时对象
@@ -30,11 +31,13 @@ void test_template()
 	for_everyone_t(arr, 10, Show<float>());
 	for_everyone_t(arr, 5, DoubleMe<float>());
 	for_everyone_t(arr, 10, Show<float>());
+
+
 }
 
 int main()
 {
-	test();
+//	test();
 	test_template();
 	system("pause");
     return 0;

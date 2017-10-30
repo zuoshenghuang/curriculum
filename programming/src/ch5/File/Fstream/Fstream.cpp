@@ -44,7 +44,7 @@ void test_write()
 
 int main()
 {
-	test_read();
+	//test_read();
 	test_write();
 	system("pause");
     return 0;

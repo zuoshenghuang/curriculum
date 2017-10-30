@@ -7,8 +7,8 @@
 int main()
 {
 //	test_object();
-	test_heap();
-//	test_point();
+//	test_heap();
+	test_point();
 	system("pause");
 	return 0;
 }

@@ -1,21 +1,23 @@
 #include <iostream>
-
 void test_read()
 {
 	// 绝对路径
 	//E:\doc\课程\repos\programming\src\ch5\File\File\File.cpp 
-	//const char * file_name = "E:\\doc\\课程\\repos\\programming\\src\\ch5\\File\\File\\File.cpp";
-	const char * file_name = "test.txt";  //  相对路径
+	const char * file_name = "E:\\doc\\课程\\repos\\programming\\src\\ch5\\File\\File\\File.cpp";
+	//const char * file_name = "test.txt";  //  相对路径
 	//const char * file_name = "File.cpp";  //  相对路径
 
 	FILE * fp;
 	fopen_s(&fp, file_name, "r");
 	if (!fp)
+	{
+		std::cout << "cannot find the file" << std::endl;
 		return;
+	}
 
-	char buff[100];
-	memset(buff, 0, 100);
-	fread(buff, 1, 99, fp);
+	char buff[1000];
+	memset(buff, 0, 1000);
+	fread(buff, 1, 999, fp);
 	std::cout << buff << std::endl;
 	fclose(fp);
 }

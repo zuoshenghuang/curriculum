@@ -11,7 +11,7 @@ void test_char()
 	char seven = '7';
 	char eleven = '11';  // dumb !
 	char slash = '/';
-	// char back_slash = '\'; // 这是什么？
+	//char back_slash = '\'; // 这是什么？
 	char back_slash = '\\';
 
 	std::cout << "a:\t" << a << "=" << (int)a << "\tHEX:" << std::hex << (int)a << std::dec << std::endl;
@@ -38,13 +38,15 @@ void test_chinese()
 
 	char p[] = "我的中国心";
 	std::cout << p << std::endl;
+	std::cout << "=====================" << std::endl;
+
 
 	char me[5];
 	me[4] = 0;
 	me[0] = 0xce; me[1] = 0xd2;
 	me[2] = 0xd0; me[3] = 0xc4;
 
-	std::cout << me << std::endl;
+	std::cout <<"me:\t"<< me << std::endl;
 }
 int main()
 {

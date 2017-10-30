@@ -37,7 +37,7 @@ void test_object()
 Object * pObject = NULL;
 void heap_object()
 {
-	pObject = new Object("Anywhre");
+	pObject = new Object("Anywhere");
 	pObject->show();
 }
 

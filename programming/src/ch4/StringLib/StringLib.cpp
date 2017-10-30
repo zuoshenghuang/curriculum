@@ -28,9 +28,14 @@ void test_str_link()
 void test_str_ok()
 {
 	char string[] = "Brazil,Russia	India,China\nSouth Africa";
+	std::cout << "string is:\t" << string << std::endl;
+	std::cout << "----------------------" << std::endl;
+
+
 	char *seps = ",\t\n";
 	char *next_token = NULL;
 	char * sub = strtok_s(string, seps, &next_token);
+	
 
 	while (sub != NULL)
 	{
@@ -43,7 +48,7 @@ int main()
 {
 //	test_string_len();
 //	test_str_link();
-//	test_str_ok();
+	test_str_ok();
 	system("pause");
     return 0;
 }

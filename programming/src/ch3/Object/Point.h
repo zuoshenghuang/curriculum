@@ -14,8 +14,11 @@ public:
 //	Point() { Point(0, 0);						// 调用(1),实现(2)
 
 	// 拷贝构造函数
-	Point(const Point & other) : x(other.x), y(other.y) //const
+	Point(const Point & other)  //const
 	{
+		x = other.x;
+		y = other.y;
+
 		std::cout<< *this <<" copy from "<<other<<std::endl;
 	}
 

@@ -44,23 +44,23 @@ void test_const()
 
 //	p[3] = 't';			// 编译过，但危险
 //	q[3] = 't';			// 常量无法赋值
-	std::cout << "p : " << p << std::endl;
-	std::cout << "q[3] : " << q[3] << std::endl;
+//	std::cout << "p : " << p << std::endl;
+//	std::cout << "q[3] : " << q[3] << std::endl;
 
 	p = name;
 	p[3] = 't';
 	std::cout << "p : " << p << std::endl;
 
-	q = name;
+//	q = name;
 //	q[3] = 't';			// 还是不行
-	std::cout << "p : " << p << std::endl;
+//	std::cout << "p : " << p << std::endl;
 }
 
 void test_const_where()
 {
-	const char * a = "Barbin";
+	const char * a = "Harbin";
 	char * const p = "Beijing";
 	const char * const q = "Hangzhou";
-//	p = q;						// 编译不过 
-//	q = a;						// 编译不过
+	p = a;						// 编译不过 
+	q = a;						// 编译不过
 }

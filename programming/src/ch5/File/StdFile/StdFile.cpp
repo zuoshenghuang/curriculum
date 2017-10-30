@@ -6,7 +6,7 @@ int main()
 	fwrite(buf, 1, strlen(buf), stdout);
 	fwrite(buf, 1, strlen(buf), stderr);
 	
-	fprintf(stderr, "test ok ? %s", buf);
+	fprintf(stderr, "test ok ? %s%d", buf, 50);
 
 	std::cout << "OK" << std::endl;
 

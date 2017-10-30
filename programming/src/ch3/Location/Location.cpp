@@ -32,13 +32,13 @@ void test_stackobject()
 
 	StackObject so("Milk");							// (1)
 
- // StackObject * pOs = new StackObject("Milk");    // (2)
+//  StackObject * pOs = new StackObject("Milk");    // (2)
 }
 
 void test_heapObject()
 {
 	// 无法在栈上使用, (1)无效，编译无法通过
-	// HeapObject car("Benz");									// (1)
+	HeapObject car("Benz");									// (1)
 	// car.show();
 
 	HeapObject * product = HeapObject::produceObject("BMW"); // (2)
@@ -49,8 +49,8 @@ void test_heapObject()
 
 int main()
 {
-	test_object();
-	test_stackobject();
+//	test_object();
+//	test_stackobject();
 	test_heapObject();
 	system("pause");
     return 0;
