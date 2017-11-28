@@ -37,9 +37,9 @@ void show_register_addr()
 
 int main()
 {
-	//test_mem();
+	test_mem();
 	//test_register();
-	show_register_addr();
+	//show_register_addr();
 
 	system("pause");
     return 0;

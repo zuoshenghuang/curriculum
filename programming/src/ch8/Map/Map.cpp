@@ -3,7 +3,6 @@
 #include<string>
 #include<iostream>
 #include "Student.h"
-
 using namespace std;
 void test_map()
 {
@@ -32,13 +31,12 @@ Student(10231, "Candy", 15, 1.83f)
 
 void test_order()
 {
-
 	ISMap scoreRankList;
 	for (Student s : a)							// 一个新的标准
 	{
 		scoreRankList[s.getScore()] = s;
-	}
-	
+	//	scoreRankList[s.getHight()] = s;
+	}	
 	ISMap::iterator it = scoreRankList.begin();
 	while (it != scoreRankList.end())
 	{

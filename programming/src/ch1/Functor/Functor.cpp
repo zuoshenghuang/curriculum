@@ -35,7 +35,7 @@ void test_show_by_condition()
 		a[i] = i - 25;
 	}
 
-	//show_by_condition(a, COUNT, lessthanten);
+	show_by_condition(a, COUNT, lessthanten);
 	// show_by_condition(a, COUNT, Even());
 	//show_by_condition(a, COUNT, MT21());
 }

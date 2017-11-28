@@ -16,9 +16,7 @@ void DataFile::load(Array<Student> & arr)
 	{
 		if (count > (arr.getSize()-1))
 			break;
-
-		in.getline(buffer, 100);			// 一行一行地读
-
+		in.getline(buffer, 100);	// 一行一行地读
 		Student stu;
 		stu.loadFromString(buffer);
 		arr[count++] = stu;

@@ -43,9 +43,9 @@ void test_analyze()
 
 void test_student()
 {
+	std::cout << "start --------------" << std::endl;
 	Student a(10031, "Andy", 32, 1.75f);
 	Student b(10032, "Candy", 75, 1.68f);
-
 	std::vector<Student> v;
 	v.push_back(a);
 	v.push_back(b);
@@ -68,8 +68,8 @@ int main()
 {
 	//test_simple();
 	//test_deep();
-	test_analyze();
-	//test_student();
+	//test_analyze();
+	test_student();
 
 	system("pause");
     return 0;

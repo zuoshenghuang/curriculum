@@ -15,12 +15,9 @@ public:
 	{
 		return new ListNode(v);
 	}
-
 private:
 	ListNode(T v) : value(v) {}
-
 private:
-
 	T value;
 	ListNode * next;
 };

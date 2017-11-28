@@ -17,7 +17,6 @@ public:
 
 	void show()
 	{
-		
 		std::cout << "ID(" << this << "):\t"  << skin <<" "<< name << " potato " <<std::endl;
 	}
 

@@ -4,7 +4,6 @@
 void test_int_list()
 {
 	MiniList<int> ilist;
-
 	for (int i = 0; i < 10; i++)
 		ilist.insert(i);
 

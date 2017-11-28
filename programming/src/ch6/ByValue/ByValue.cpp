@@ -34,7 +34,7 @@ void test_peel()
 
 int main()
 {
-	test_add_3();
+//	test_add_3();
 	test_peel();
 	
 	system("pause");

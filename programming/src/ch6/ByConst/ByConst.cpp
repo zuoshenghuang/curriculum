@@ -7,7 +7,7 @@ void peel_potato_const(const Potato & p)
 
 void Potato::changeName(std::string n) const
 {
-	//	name = n;
+//		name = n;
 }
 
 void test_const()
@@ -24,6 +24,7 @@ void test_assign()
 	Potato a("Obama");
 	Potato b("Trump");
 	b = a;
+//	Potato c = a;
 }
 
 void test_assign_agin()
