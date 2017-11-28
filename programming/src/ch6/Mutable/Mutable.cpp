@@ -13,7 +13,7 @@ void Student::changeID(int i)const
 
 void Student::changeName(const std::string & n) const
 {
-	name = n;
+	name = n;		// 可以更改，即便是const函数
 }
 
 void test_mutable()
@@ -27,7 +27,6 @@ void test_mutable()
 	a.show();
 	b.show();
 }
-
 
 int main()
 {

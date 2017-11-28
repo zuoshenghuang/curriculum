@@ -13,12 +13,13 @@ public:
 		name = other.name;
 		skin = other.skin;
 		std::cout << "ID(" << this << ")" << name << " <---copied from---" << "ID(" << &other << ")" << other.name << std::endl;
-
 	}
 
-	//Potato operator = (Potato & other)				// (1)
-	//Potato & operator = (Potato & other)          // (2)		// 推荐方式
-	const Potato & operator = (Potato & other)	// (3)		// 限定了不能使用 x = y = z;
+	//Potato operator = (const Potato & other)			 // (1)
+	//Potato & operator = (Potato & other)				 // (2)		
+	//Potato & operator = (const Potato & other)         // (3)		// 推荐方式
+	//const Potato & operator = (Potato & other)	     // (4)		// 限定了不能使用 x = y = z;
+	const Potato & operator = (const Potato & other)	 // (5)     // 又可以了，这种比较好
 	{
 		name = other.name;
 		skin = other.skin;

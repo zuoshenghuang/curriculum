@@ -15,5 +15,5 @@ public:
 
 private:
 	int id;
-	mutable std::string name;
+	mutable std::string name;		// 可以改名
 };
