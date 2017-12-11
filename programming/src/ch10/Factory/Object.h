@@ -89,7 +89,7 @@ public:
 			return new Light();
 		else if (what == "baboon")
 			return new Baboon();
-
+	
 		return NULL;
 	}
 };

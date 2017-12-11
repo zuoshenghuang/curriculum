@@ -3,7 +3,7 @@
 void testDecorator()
 {
 	Freshman zwl;
-	//std::cout << a.getTitle() << ":" << a.getStudyTime()<<std::endl;
+	std::cout << zwl.getTitle() << ":" << zwl.getStudyTime()<<std::endl;
 
 	Monitor m(zwl);
 	std::cout << m.getTitle() << ":" << m.getStudyTime() << std::endl;

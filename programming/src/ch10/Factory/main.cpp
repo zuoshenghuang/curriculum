@@ -4,11 +4,14 @@
 
 void testGod()
 {
+	
 	Object * a = God::produce("light");
 	Object * b = God::produce("human");
 	Object * c = God::produce("baboon");
 	a->show();
 	b->show();
+
+	((Animal *)b)->move();
 	dynamic_cast<Human *>(b)->move();
 	c->show();
 	dynamic_cast<Baboon *>(c)->move();

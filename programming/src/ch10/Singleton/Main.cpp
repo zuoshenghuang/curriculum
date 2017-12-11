@@ -29,7 +29,7 @@ void testManager()
 
 int main()
 {
-	testGod();
+	//testGod();
 	testManager();
 
 	system("pause");

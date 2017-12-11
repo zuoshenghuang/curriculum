@@ -19,7 +19,7 @@ void testSoldier()
 
 void testKiller()
 {
-	setRed();
+	setGreen();
 	Knife knife;
 	Gun gun;
 	Bomb bomb;
@@ -40,7 +40,6 @@ void testKiller()
 
 	setWhite();
 }
-
 int main()
 {
 	testSoldier();

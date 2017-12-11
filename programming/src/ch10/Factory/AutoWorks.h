@@ -1,10 +1,7 @@
 #pragma once
 #include <iostream>
 
-/*
-	抽象工厂实例
-	汽车生产厂家
-*/
+
 class AutoMobile
 {
 public:
@@ -66,7 +63,10 @@ public:
 	}
 };
 
-// 汽车厂
+/*
+	抽象工厂实例
+	汽车生产厂家
+*/
 class AutoWorks
 {
 public:

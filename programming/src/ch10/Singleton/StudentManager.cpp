@@ -1,11 +1,11 @@
 #include "StudentManager.h"
 
-//StudentManager * StudentManager::instance = 0;   //(1)ÀÁºº
+//StudentManager * StudentManager::instance = NULL;   //(1)ÀÁºº
 StudentManager * StudentManager::instance = new StudentManager(); // (2) ¶öºº
 
 void StudentManager::init()
 {
-	// instance = new StudentManager();			 //(1)ÀÁºº
+	//instance = new StudentManager();			 //(1)ÀÁºº
 
 	idName[10075] = "Tom";
 	idName[10076] = "ÕÅÈı";

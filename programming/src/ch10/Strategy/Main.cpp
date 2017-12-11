@@ -7,7 +7,7 @@ void testStrategy()
 	tom.useStrategy(& FakeExam());
 	tom.pass();
 
-	tom.useStrategy(&ReviewHardly());
+	tom.useStrategy(& ReviewHardly());
 	tom.pass();
 }
 int main()
