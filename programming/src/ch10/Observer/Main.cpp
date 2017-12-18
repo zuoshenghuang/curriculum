@@ -19,7 +19,7 @@ void testObserver()
 
 int main()
 {
-	//testObserver();
+	testObserver();
 
 	system("pause");
     return 0;
