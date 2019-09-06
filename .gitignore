@@ -33,3 +33,9 @@
 *.suo
 *.user
 *.opendb
+/homework/score.xlsx
+/software.related/ref/Google Java编程风格指南_files/*.css
+/software.related/ref/Google Java编程风格指南_files/*.下载
+/software.related/ref/Google Java编程风格指南_files/*.html
+/software.related/ref/Google Java编程风格指南_files/*.php
+/programming/2017/src/ch2/x64/Debug/*.lnk
