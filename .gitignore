@@ -39,3 +39,5 @@
 /software.related/ref/Google Java编程风格指南_files/*.html
 /software.related/ref/Google Java编程风格指南_files/*.php
 /programming/2017/src/ch2/x64/Debug/*.lnk
+/software/*.test
+/software/testMain/testMain
