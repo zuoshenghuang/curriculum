@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>JS版计算器</title>
+<link rel="stylesheet" type="text/css" href="">
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!--js代码可以放置在任意位置，按照先后顺序依次执行 一般放在head标签之间-->
+<script type="text/javascript">
+    /* 定义一个Calculator类*/
+    function Calculator(){
+        this.jisuan=function(num1,num2,oper){
+            var res=0;
+            switch(oper){
+                case "+":
+                    res=num1+num2;
+                    break;
+                case "-":
+                    res=num1-num2;
+                    break;
+                case "*":
+                    res=num1*num2;
+                    break;
+                case "/":
+                    res=num1/num2;
+                    break;
+            }
+            return res;
+        }
+    }
+    //创建对象
+    var calculator=new Calculator();
+    /*定义全局变量*/
+    var val=0; //放置输入的值
+    var xval=0;//保存转换Number类型的值
+    var temp=0; //保存第一次输入的值    
+    var oper="";//保存输入的操作符
+    /*获取输入数字*/
+    function inputEvent(e){
+        val=e.value
+        var xsval=document.getElementById("inp1");        
+        xsval.value+=val; //连续输入数字(String类型)
+        //转换Number类型
+        xval=parseFloat(xsval.value);
+    }
+    /*获取第一行的数据*/
+    function inputPCB(e){
+        //window.alert(e.value);
+        var xsval=document.getElementById("inp1");
+        if(e.value=="Clear"){
+            xsval.value="";
+        }else if(e.value=="Back"){
+            /*这个功能还没有实现，有兴趣的朋友可以自己做一做*/
+        }else if(e.value=="平方"){
+            //计算平方
+            xsval.value=Math.pow(xsval.value,2);            
+        }
+    }
+    /*输入操作符*/
+    function inputOper(e){
+        oper=e.value;
+        //window.alert(typeof oper);
+        //oper=oper.substr(0);
+        if (e.value=="+"){
+            var xsval=document.getElementById("inp1");
+            //保存上次计算结果，并对字符串进行转换Number类型
+            temp=parseFloat(xsval.value);
+            //第一次输入的值设置为空
+            xsval.value="";                        
+        }else if(e.value=="-"){
+            var xsval=document.getElementById("inp1");
+            temp=parseFloat(xsval.value);
+            xsval.value="";
+        }else if(e.value=="*"){
+            var xsval=document.getElementById("inp1");
+            temp=parseFloat(xsval.value);
+            xsval.value="";
+        }else if(e.value=="/"){
+            var xsval=document.getElementById("inp1");
+            temp=parseFloat(xsval.value);
+            xsval.value="";
+        }
+    }
+    /*计算结果*/
+    function inputEquel(e){
+        var xsval=document.getElementById("inp1");        
+        if(e.value=="="){
+            //window.alert(xval);
+            //调用对象方法
+            xsval.value=calculator.jisuan(temp,xval,oper);
+        }
+    }
+</script>
+<!--css 样式-->
+<style>
+    input{
+        width:60px;
+    }
+    #inp1{
+        width:280px;
+        text-align:right;
+    }
+</style>
+</head>
+<body>
+    <table border="1">
+        <!--显示结果行-->
+        <tr><td colspan="4"><input id="inp1" type="text" value="" name="xianshi"/></td></tr>
+        <!--第一行-->
+        <tr><td><input type="button" value="平方" onclick="inputPCB(this)"/></td><td><input type="button" value="Clear" onclick="inputPCB(this)"/></td><td><input type="button" value="Back"onclick="inputPCB(this)"/></td><td></td></tr>
+        <!--第二行-->
+        <tr><td><input type="button" value="1" onclick="inputEvent(this)"/></td><td><input type="button" value="2" onclick="inputEvent(this)"/></td><td><input type="button"value="3" onclick="inputEvent(this)"/></td><td><input type="button" value="4" onclick="inputEvent(this)"/></td></tr>
+        <!--第三行-->
+        <tr><td><input type="button" value="5" onclick="inputEvent(this)"/></td><td><input type="button" value="6" onclick="inputEvent(this)"/></td><td><input type="button"value="7" onclick="inputEvent(this)"/></td><td><input type="button" value="8" onclick="inputEvent(this)"/></td></tr>    
+        <!--第四行-->
+        <tr><td><input type="button" value="9" onclick="inputEvent(this)"/></td><td><input type="button" value="0" onclick="inputEvent(this)"/></td><td><input type="button"value="." onclick="inputEvent(this)"/></td><td><input type="button" value="=" onclick="inputEquel(this)"/></td></tr>
+        <!--第五行-->
+        <tr><td><input type="button" value="+" onclick="inputOper(this)"/></td><td><input type="button" value="-" onclick="inputOper(this)"/></td><td><input type="button"value="*" onclick="inputOper(this)"/></td><td><input type="button" value="/" onclick="inputOper(this)"/></td></tr>    
+    </table>
+</body>
+</html>
