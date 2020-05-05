@@ -10,11 +10,15 @@ public class UserManager {
 
 	private Properties props = new Properties();
 	
-	public static UserManager getInstance() {return instance;}
-	/*
+	public static UserManager getInstance() {
+		instance.load();
+		return instance;
+	}
+	
 	public boolean load(){
 		try {
-			FileInputStream iFile = new FileInputStream(System.getProperty("catalina.base") + "/myconf/users.props");
+			//FileInputStream iFile = new FileInputStream(System.getProperty("catalina.base") + "/myconf/users.props");
+			FileInputStream iFile = new FileInputStream("D:/myconf/users.props");
 			props.clear();
 			props.load(iFile);
 			iFile.close();
@@ -25,10 +29,10 @@ public class UserManager {
 			return false;
 		}
 	}
-	*/
+	
 	public boolean checkUserPassword(String u, String p)
 	{
-		/*
+		
 		String pass = props.getProperty(u);
 		
 		if(pass == null)
@@ -36,7 +40,7 @@ public class UserManager {
 		
 		if(! p.equals(pass))
 			return false;
-		*/
+		
 		return false;
 	}	
 }
