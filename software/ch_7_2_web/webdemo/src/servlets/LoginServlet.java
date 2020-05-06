@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import main.UserManager;
 import main.Validdation;
 
 @WebServlet(name="Login",urlPatterns={"/Login.action"})
@@ -20,6 +21,7 @@ public class LoginServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("--------------------");
+		doPost(request, response);
 		return;
 	}
 
@@ -34,6 +36,8 @@ public class LoginServlet extends HttpServlet {
 		
 		if(this.isValid(name, pass)){
 			System.out.println("ok");
+			request.getSession().setAttribute("user", name);
+			request.getRequestDispatcher("/succ.jsp").forward(request,response);
 		}
 		else {
 			System.out.println("failed");
@@ -44,18 +48,17 @@ public class LoginServlet extends HttpServlet {
 			System.out.println("=====================");
 			request.getSession().setAttribute("user", name);
 			request.getRequestDispatcher("/succ.jsp").forward(request,response);
-			logger.info(name + ",login,success");
 		}else {
 			request.getSession().setAttribute("info", "用户名密码不匹配");
 			request.getRequestDispatcher("/fail.jsp").forward(request,response);
-			logger.info(name + ",login,failed");
 		}
 		*/		
 	}
 	
 	private boolean isValid(String u, String p)
 	{
-		return Validdation.isValid(u, p);
+		//return Validdation.isValid(u, p);
+		return UserManager.getInstance().checkUserPassword(u, p);
 		//return false;
 	}
 }

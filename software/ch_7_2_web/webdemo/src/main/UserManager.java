@@ -21,6 +21,11 @@ public class UserManager {
 			FileInputStream iFile = new FileInputStream("D:/myconf/users.props");
 			props.clear();
 			props.load(iFile);
+			
+			for(Object v : props.values())
+			{
+				System.out.println((String) v);
+			}
 			iFile.close();
 			return true;
 			
@@ -38,9 +43,10 @@ public class UserManager {
 		if(pass == null)
 			return false;
 		
+		System.out.println(u + "\t" + p);
 		if(! p.equals(pass))
 			return false;
 		
-		return false;
+		return true;
 	}	
 }
