@@ -11,54 +11,73 @@ import javax.servlet.http.HttpServletResponse;
 import main.UserManager;
 import main.Validdation;
 
-@WebServlet(name="Login",urlPatterns={"/Login.action"})
+@WebServlet(name = "Login", urlPatterns = { "/Login.action" })
 public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = -1L;
-	
-	
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("--------------------");
-		doPost(request, response);
-		return;
+
+	private boolean isValid(String u, String p) {
+		return true;
+		/*
+		 * if(! u.equals("hzs")) return false;
+		 * 
+		 * if(! p.equals("123456")) return false;
+		 * 
+		 * return true;
+		 */
+		// return Validdation.isValid(u, p);
+		//return UserManager.getInstance().checkUserPassword(u, p);
+		// return false;
 	}
 
 	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		
+		System.out.println("--------------------");
 		String name = request.getParameter("username");
 		String pass = request.getParameter("passwd");
-		System.out.println("====," + name + "\tpasswd:" + pass);
-		
-		if(this.isValid(name, pass)){
-			System.out.println("ok");
+		System.out.println("username:" + name + "\tpasswd:" + pass);
+
+		if (isValid(name, pass)) {
+			System.out.println("OK");
 			request.getSession().setAttribute("user", name);
-			request.getRequestDispatcher("/succ.jsp").forward(request,response);
-		}
-		else {
-			System.out.println("failed");
-		}
-		
-		/*	
-		if(UserManager.getInstance().checkUserPassword(name, pass)) {
-			System.out.println("=====================");
-			request.getSession().setAttribute("user", name);
-			request.getRequestDispatcher("/succ.jsp").forward(request,response);
-		}else {
+			request.getRequestDispatcher("/succ.jsp").forward(request, response);
+		} else
+		{
+			System.out.println("不匹配");
 			request.getSession().setAttribute("info", "用户名密码不匹配");
-			request.getRequestDispatcher("/fail.jsp").forward(request,response);
+			request.getRequestDispatcher("/fail.jsp").forward(request, response);
 		}
-		*/		
 	}
-	
-	private boolean isValid(String u, String p)
-	{
-		//return Validdation.isValid(u, p);
-		return UserManager.getInstance().checkUserPassword(u, p);
-		//return false;
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		System.out.println("=====================");
+		/*
+		 * String name = request.getParameter("username"); String pass =
+		 * request.getParameter("passwd"); System.out.println("====," + name +
+		 * "\tpasswd:" + pass);
+		 * 
+		 * if(this.isValid(name, pass)){ System.out.println("ok");
+		 * request.getSession().setAttribute("user", name);
+		 * request.getRequestDispatcher("/succ.jsp").forward(request,response); } else {
+		 * System.out.println("failed"); }
+		 */
+		/*
+		 * if(UserManager.getInstance().checkUserPassword(name, pass)) {
+		 * System.out.println("=====================");
+		 * request.getSession().setAttribute("user", name);
+		 * request.getRequestDispatcher("/succ.jsp").forward(request,response); }else {
+		 * request.getSession().setAttribute("info", "用户名密码不匹配");
+		 * request.getRequestDispatcher("/fail.jsp").forward(request,response); }
+		 */
 	}
+
 }

@@ -27,6 +27,7 @@ public class DBConn {
 		}
 	}
 	
+	// String str = "select * from userpasswd_tbl;"
 	public DBConn(String i, String d, String u, String p){ip = i; dbname = d; user = u; pwd = p;}	
 	Connection getConnection(){return conn;}
 	public boolean isConnected() {return null != conn;}
@@ -73,7 +74,7 @@ public class DBConn {
 		}
 	}
 	
-	static void testJDBC()
+	static void testJDBC() // java DB connector
 	{
 		DBConn dc = new DBConn("127.0.0.1", "mydata", "root", "123456");
 		dc.connect();
