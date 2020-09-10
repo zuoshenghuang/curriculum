@@ -41,3 +41,9 @@
 /programming/2017/src/ch2/x64/Debug/*.lnk
 /software/*.test
 /software/testMain/testMain
+/software/ch_7_2/webdemo/.classpath
+/software/ch_7_2/webdemo/.project
+/software/ch_7_2/webdemo/.settings
+/software/ch_7_2_web/webdemo/.classpath
+/software/ch_7_2_web/webdemo/*.project
+/software/ch_7_2_web/webdemo/.settings
